@@ -169,5 +169,10 @@ if($nomeicon =='Fisioterapia'){
 }
  
 return $nomeicon;}
+ /* limitar o tamanho do texto */          
+ function limitarTexto($post_conteudo, $limite){
+                  $post_conteudo = substr($post_conteudo, 0, strrpos(substr($post_conteudo, 0, $limite), ' ')) . '.';
+                   return $post_conteudo;
+                  }
 
 ?>
