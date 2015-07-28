@@ -26,7 +26,7 @@
 				 'parent'=> $tecnologo->ID  ) );
 		         ?>
 
-	</div><!-- .container -->
+
 
 		 <footer class="page-footer blue darken-1">
           <div class="container">
@@ -53,7 +53,7 @@
 			  
 			  
 			   <div class="col s12 m12 l12">
-              	<img class="center-align" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white-footer.png">
+              	<img class="center-align" alt="Logotipo FIS" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white-footer.png">
                 <h6 class="bold white-text">Faculdade de Integração do Sertão</h6>
                 <p class="grey-text text-lighten-4">Rua João Luiz de Melo, 2110, Bairro Tancredo Neves CEP: 56909-205 Serra Talhada - PE
 Contato: sesst@fis.edu.br</p>
