@@ -28,8 +28,12 @@
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
+<<<<<<< HEAD
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+=======
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+>>>>>>> c0e8cdde77c4dc5ebfbfb3ba701a56a77332be09
 	<!-- Montserrat -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -95,6 +99,7 @@
 				   	</li>
 				    
 			    </ul>
+<<<<<<< HEAD
 				<div class="conteiner blue">
 			    <ul class="side-nav" id="mobile-demo">
 			     <a class="brand-logo minimo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -106,6 +111,20 @@
 			        <li><a href="mobile.html">Mobile</a></li>
 			    </ul>
 			    </div>
+=======
+				<div class="container">
+
+			    <ul class="side-nav blue darken-2" id="mobile-demo">
+			    	<li>
+			    	<img class="align-center" alt="Logotipo FIS" src="<?php echo get_template_directory_uri(); ?>/assets/images/FIS-logotipo-branca-side-bar.png">
+			    	</li>
+			        <li><a class="white-text" href="sass.html"><strong>Início</strong></a></li>
+			        <li><a class="white-text" href="badges.html">Components</a></li>
+			        <li><a class="white-text" href="collapsible.html">Javascript</a></li>
+			        <li><a class="white-text" href="mobile.html">Mobile</a></li>
+			    </ul>
+			  </div>
+>>>>>>> c0e8cdde77c4dc5ebfbfb3ba701a56a77332be09
 			  
 			  </div>
 			</nav>
