@@ -234,14 +234,14 @@ figure {
  
 </div><!-- Cards Coluna Principal -->
 
+<div class="col s12 m6 l12"><!-- Cards Coluna Principal -->
+  <div class="departamentos card blue darken-1">
+          <div class="card-content-fis card-content blue darken-1">
 
-<div class="col s12 m6 l12 "><!-- Cards Coluna Principal -->
-  <div class="departamentos card white">
-          <div class="card-content blue">
           <span class="card-title">Departamentos<i class="mdi-navigation-more-vert right"></i></span>
         </div>
         
-        <div class="collection white">
+        <div class="collection blue darken-1">
         <a href="biblioteca" class="opaco collection-item">Biblioteca</a>
         <a href="nupex" class="opaco collection-item">NUPEX</a>
         <a href="escola-fisio" class="opaco collection-item">Escola Fisio</a>
@@ -250,13 +250,13 @@ figure {
 
   </div>
 
-   <div class="revistas card white">
-          <div class="card-content  blue">
+   <div class="revistas card blue darken-1">
+          <div class="card-content-fis card-content">
 
           <span class="card-title menor">Revistas e Periódicos<i class="mdi-navigation-more-vert right"></i></span>
         </div>
         
-        <div class="collection white">
+        <div class="collection blue darken-1">
         <a href="http://fis.edu.br/resac/" TARGET="_blank" class="opaco collection-item">Sociedade, Administração e Contemporaneidade</a>
         <a href="http://www.fis.edu.br/revistadireito3/" TARGET="_blank" class="opaco collection-item">Construindo Direito</a>
         <a href="http://www.fis.edu.br/revistaenfermagem/" TARGET="_blank" class="opaco collection-item">Saúde Coletiva em Debate</a>
@@ -265,7 +265,8 @@ figure {
 
   </div>
 </div><!-- Cards Coluna Principal -->
- 
+
+
  </div>
 
  
