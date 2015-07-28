@@ -14,7 +14,7 @@
  */
 
 get_header(); ?>
-<style>
+<style type="text/css">
 
 .z-depth-3, .img-link:hover, .effect-honey:hover  {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -92,11 +92,10 @@ figure {
 <div class="parallax-container slider"><!-- Slide prioncipal -->
      <ul class="slides">
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg"> <!-- random image -->
+        <img alt="Vestibular 2015.2" src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg"> <!-- random image -->
         <div class="caption center-align"></div>
       </li>
       
-      </li>
     </ul>
 </div><!-- FIM Slide prioncipal -->
 
@@ -142,7 +141,7 @@ figure {
  <div class="card">
  <a href="prouni" title="PROUNI">
     <div class="card-image waves-effect waves-block waves-light">
-     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Post-ProUni.png" style="height: 185px;">
+     <img alt="Icone PROUNI" src="<?php echo get_template_directory_uri(); ?>/assets/images/Post-ProUni.png" style="height: 185px;">
     </div>
    </a>
   </div>
@@ -150,7 +149,7 @@ figure {
     <div class="card">
     <a href="fies" title="FIES">
     <div class="card-image waves-effect waves-block waves-light">
-     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fies-saldo-devedor-e-juros.png" style="height: 185px;">
+     <img alt="Icone fies" src="<?php echo get_template_directory_uri(); ?>/assets/images/fies-saldo-devedor-e-juros.png" style="height: 185px;">
     </div>
    </a>
   </div>  
@@ -243,7 +242,6 @@ figure {
               <p>
               <button type="submit" class="waves-effect waves-light btn right blue darken-1">Entrar</button>
               </p>
-            </p>
           </div>
         </form>
       </div>
@@ -259,8 +257,10 @@ figure {
         
         <div class="collection white">
         <a href="biblioteca" class="opaco collection-item">Biblioteca</a>
-        <a href="nupex" class="opaco collection-item">NUPEX</a>
+        <a href="http://www.fis.edu.br/nupex/" class="opaco collection-item">NUPEX</a>
         <a href="escola-fisio" class="opaco collection-item">Escola Fisio</a>
+        <a href="escola-fisio" class="opaco collection-item">PROCON</a>
+        <a href="http://fis.edu.br/cpa/" class="opaco collection-item">CPA</a>
      
       </div>
 
@@ -296,7 +296,7 @@ figure {
 <div class="row blue"><!-- Inicio linha2 -->
 
  <div class="col offset-l1 l10 s12">
-<div id="hero" class="hero parallax-effect ">
+<div class="parallax-effect ">
 		 
                <?php 
 			// pega os ids das paginas
@@ -315,10 +315,9 @@ figure {
 		        
        ?>
          
-    </ul>
               
     <div class="row">
-      <span class="white-text"><h4 class="white-text darken-2 light center">ENSINO</h4><br></span>
+      <h4 class="white-text darken-2 light center">ENSINO</h4><br>
                      <div class="col s12 ">
                         <ul class="tabs ">
                            <li class="tab col s3 blue-text text-darken-2"><a class="active" href="#graduacao"><b>Bacharelado</b></a></li>
@@ -381,15 +380,15 @@ figure {
 
 
 <div class="row red-fis"><!-- Inicio linha4 -->
- <span class="white-text"><h4 class="blue-text darken-2 light center">FIS na Mídia</h4><br></span>
+ <h4 class="blue-text darken-2 light center">FIS na Mídia</h4><br>
 <div class="col s12 m6 l4">
 
 <div class="card">
         <div class="card-content">
-          <span class="card-title grey-text text-darken-4">Instagran #FIS<i class="mdi-navigation-more-vert right"></i></span>
+          <span class="card-title grey-text text-darken-4">TV FIS<i class="mdi-navigation-more-vert right"></i></span>
         </div>
           <div class="video-container no-controls">
-          <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0;autohide=1" frameborder="0" allowfullscreen></iframe>
+          <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0;autohide=1" style="border:0;" allowfullscreen></iframe>
         </div>
       </div>
 

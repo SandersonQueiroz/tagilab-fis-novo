@@ -94,17 +94,18 @@
 				   	</li>
 				    
 			    </ul>
-				<div class="conteiner blue">
-			    <ul class="side-nav" id="mobile-demo">
-			     <a class="brand-logo minimo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<div class="container">
 
-                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.png"></a>
-			        <li><a href="sass.html">Sass</a></li>
-			        <li><a href="badges.html">Components</a></li>
-			        <li><a href="collapsible.html">Javascript</a></li>
-			        <li><a href="mobile.html">Mobile</a></li>
+			    <ul class="side-nav blue darken-2" id="mobile-demo">
+			    	<li>
+			    	<img class="align-center" alt="Logotipo FIS" src="<?php echo get_template_directory_uri(); ?>/assets/images/FIS-logotipo-branca-side-bar.png">
+			    	</li>
+			        <li><a class="white-text" href="sass.html"><strong>Início</strong></a></li>
+			        <li><a class="white-text" href="badges.html">Components</a></li>
+			        <li><a class="white-text" href="collapsible.html">Javascript</a></li>
+			        <li><a class="white-text" href="mobile.html">Mobile</a></li>
 			    </ul>
-			    </div>
+			  </div>
 			  
 			  </div>
 			</nav>
