@@ -24,19 +24,18 @@ get_header(); ?>
 </div><!-- FIM Slide prioncipal -->
 
  <div class="row">
-        <div class="col l9" style="min-height:500px;">
+ <div class="col l12">
+        <div class="col l9 margem" style="min-height:500px;">
           
               <?php
+			  $titulo =get_the_title();
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
 
 					// Include the page content template.
 					get_template_part( 'content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
+ 
+					 
 				endwhile;
 			?>
                
@@ -46,15 +45,47 @@ get_header(); ?>
         </div>
         <div class="col l3" style="margin-top:-21px;">
             <div id="asid">
+              <?php 
+			   //local para widigets 
+			   if ( dynamic_sidebar('search') ) : else : endif;
+			   //verifica se existe postagem
+        $recent = new WP_Query("category_name=".$titulo."&showposts=5");  
+              if (empty($recent->have_posts())){}
+              else{
+              ?>
               
-     
-<?php     get_sidebar(); ?>
+     <div class="card">
+        <div class="card-content blue darken-1">
+         <span class="card-title white-text text-darken-4" style=" margin-left: 40px;">
+         <i class="fis-fis-unicolor" style="font-size: 50px;position: absolute;margin-top: -5px;left: 0;"> </i>Últimas Notícias</span>
+        </div>  
+     <ul class="collection"> 
+        
+       <?php 
+         
+        while($recent->have_posts()) : $recent->the_post();
+        ?> 
+            <li class="collection-item avatar selected" style="height: auto;">
+            <?php the_post_thumbnail('thumbnail', array('class' => 'circle')); ?>
+            <span class="email-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></span>
+        <p class="truncate grey-text ultra-small">   <a href="<?php the_permalink(); ?>"> <?php echo get_the_date(); ?></a></p>
+          
+                  </li>  
+             <?php endwhile; ?>
+            </ul>
+
+
+      </div>
+<?php }; 
+   if ( dynamic_sidebar('sidebar_pages') ) : else : endif;  
+?>
             
                
   
     </div>
-     </div>
-	 </div>
+   </div>
+ </div>
+ </div>
 
 <?php
  //

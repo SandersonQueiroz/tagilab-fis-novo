@@ -411,6 +411,45 @@ function arphabet_revista_curso_widgets_init() {
 	 
 
 }
+function arphabet_sidbar_page_widgets_init() {
+
+	register_sidebar(  
+	array(
+		'name'          => 'Sidebar De Paginas Genéricas  ',
+		'id'            => 'sidebar_pages',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	)
+	
+	
+	
+	 );
+	 
+
+}
+
+function arphabet_search_widgets_init() {
+
+	register_sidebar(  
+	array(
+		'name'          => 'Pesquisar',
+		'id'            => 'search',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		 'before_title'  => '<h2 class="entry-title">',
+		'after_title'   => '</h2>',
+	)
+	
+	
+	
+	 );
+	 
+
+}
+
+
 function arphabet_medias_curso_widgets_init() {
 
 	register_sidebar(  
@@ -429,6 +468,8 @@ function arphabet_medias_curso_widgets_init() {
 	 
 
 }
+add_action( 'widgets_init', 'arphabet_search_widgets_init' ); 
+add_action( 'widgets_init', 'arphabet_sidbar_page_widgets_init' ); 
 add_action( 'widgets_init', 'arphabet_medias_curso_widgets_init' ); 
 add_action( 'widgets_init', 'arphabet_revista_curso_widgets_init' ); 
 add_action( 'widgets_init', 'arphabet_agenda_curso_widgets_init' );

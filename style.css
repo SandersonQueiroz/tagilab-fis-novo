@@ -139,16 +139,18 @@ nav li a  {
 }
   .calendario {padding: 15px;}
 
-  .title-cursos{font-size:large;  font-weight: 700;}
-  .menor {font-size:small ;}
+    .title-cursos{font-size:large;  font-weight: 700;}
+    .menor {font-size:small ;}
 	.amarelo {background-color: }
 	.departamentos, .red-fis{background: #ec254c;}
-  .revistas {background-color: #0277bd;}
+    .revistas {background-color: #0277bd;}
 	.card-content-fis{padding-top:0px !important;padding-bottom:0px !important; }
 	.opaco {color: #FFFFFF; background: none !important; border:none !important; border-bottom:1px solid #F098A9 !important; width:calc(100% - 30px) !important; margin-left:15px !important; margin-right:15px !important;}
-  table.wp-calendar { padding: 10px;   border: 1px solid red;}
+   table.wp-calendar { padding: 10px;   border: 1px solid red;}
   .light{
     text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
         }
+	 .form-control{height:auto !important;}
+	 .entry-title{ font-size:x-large; font-weight:bold;}

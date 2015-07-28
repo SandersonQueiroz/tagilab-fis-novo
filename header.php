@@ -28,7 +28,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<!-- Montserrat -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">

@@ -75,14 +75,16 @@ figure {
   opacity: 1.0;
 }
 .slider .slides li .caption {
-  color: #fff;
-  /* background-color: #000; */
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0px, rgba(0, 0, 0, 0.83) 100%);
-  position: absolute;
-  top: 170px;
-  left: 0px;
-  width: 100%;
-  opacity: 0;
+    color: #fff;
+    /* background-color: #000; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0px, rgba(0, 0, 0, 0.83) 100%);
+    position: absolute;
+    /* height: 50px; */
+    padding-bottom: 10px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
 }
 .collection {border:none !important;}
 .margim-top-boton{ margin-bottom:40px; margin-top:40px;}
@@ -251,7 +253,7 @@ figure {
 </div><!-- Cards Coluna Principal -->
 
 <div class="col s12 m6 l12"><!-- Cards Coluna Principal -->
-  <div class="departamentos card blue darken-1">
+  <div class="departamentos card">
           <div class="card-content blue darken-1">
 
           <span class="card-title">Departamentos<i class="mdi-navigation-more-vert right"></i></span>
@@ -266,7 +268,7 @@ figure {
 
   </div>
 
-   <div class="revistas card blue darken-1">
+   <div class="revistas card">
           <div class="card-content blue darken-1">
 
           <span class="card-title menor">Revistas e Periódicos<i class="mdi-navigation-more-vert right"></i></span>
