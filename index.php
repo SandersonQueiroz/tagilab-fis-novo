@@ -142,7 +142,7 @@ figure {
  <div class="card">
  <a href="prouni" title="PROUNI">
     <div class="card-image waves-effect waves-block waves-light">
-     <img src="http://localhost/fis/wp-content/uploads/2015/07/Post-ProUni.jpg" style="height: 185px;">
+     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Post-ProUni.png" style="height: 185px;">
     </div>
    </a>
   </div>
@@ -150,7 +150,7 @@ figure {
     <div class="card">
     <a href="fies" title="FIES">
     <div class="card-image waves-effect waves-block waves-light">
-     <img src="http://localhost/fis/wp-content/uploads/2015/07/fies-saldo-devedor-e-juros.png" style="height: 185px;">
+     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fies-saldo-devedor-e-juros.png" style="height: 185px;">
     </div>
    </a>
   </div>  
@@ -235,14 +235,13 @@ figure {
 </div><!-- Cards Coluna Principal -->
 
 
-<div class="col s12 m6 l12"><!-- Cards Coluna Principal -->
-  <div class="departamentos card blue darken-1">
-          <div class="card-content-fis card-content blue darken-1">
-
+<div class="col s12 m6 l12 "><!-- Cards Coluna Principal -->
+  <div class="departamentos card white">
+          <div class="card-content blue">
           <span class="card-title">Departamentos<i class="mdi-navigation-more-vert right"></i></span>
         </div>
         
-        <div class="collection blue darken-1">
+        <div class="collection white">
         <a href="biblioteca" class="opaco collection-item">Biblioteca</a>
         <a href="nupex" class="opaco collection-item">NUPEX</a>
         <a href="escola-fisio" class="opaco collection-item">Escola Fisio</a>
@@ -251,13 +250,13 @@ figure {
 
   </div>
 
-   <div class="revistas card blue darken-1">
-          <div class="card-content-fis card-content">
+   <div class="revistas card white">
+          <div class="card-content  blue">
 
           <span class="card-title menor">Revistas e Periódicos<i class="mdi-navigation-more-vert right"></i></span>
         </div>
         
-        <div class="collection blue darken-1">
+        <div class="collection white">
         <a href="http://fis.edu.br/resac/" TARGET="_blank" class="opaco collection-item">Sociedade, Administração e Contemporaneidade</a>
         <a href="http://www.fis.edu.br/revistadireito3/" TARGET="_blank" class="opaco collection-item">Construindo Direito</a>
         <a href="http://www.fis.edu.br/revistaenfermagem/" TARGET="_blank" class="opaco collection-item">Saúde Coletiva em Debate</a>
