@@ -25,10 +25,10 @@
 
 	</style>
         
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/malterialize.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<!-- Montserrat -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -52,9 +52,6 @@
 	<header>
 	
 
-		
-		
-
 		<div class="navbar-fixed">
 			<nav class=" white-text">
 			    <div id="font-setting-buttons" class="nav-wrapper z-depth-0 white-text  blue darken-1">
@@ -70,18 +67,16 @@
 
 				<!-- Dropdown Structure -->
 				<ul id="Cursos" class="font-1 dropdown-content">
-				  <li><a href="graduacao" class="flow-text small">Graduação</a></li>
+				  <li><a href="graduacao" class="flow-text small">Bacharelado</a></li>
 				  <li><a href="#!" class="flow-text small">Tecnológico</a></li>
 				  <li class="divider"></li>
 				  <li><a href="#!" class="flow-text small">Pós/MBA</a></li>
 				</ul>
 
-			     <a class="brand-logo minimo" href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-log" rel="home">
+			     <a class="brand-logo minimo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 
-                    <img srcset="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.png 1x"></a>
+                    <img alt="Logotipo FIS" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.png"></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	 				
-			   
 
 				<ul class="right hide-on-med-and-down white-text"> 
 			 		<li><a class="left" href="<?php echo esc_url( home_url( '/' ) ); ?>">Início</a></li>
@@ -90,21 +85,26 @@
 				   
 				    <li><a class="dropdown-button" href="#!" data-activates="Cursos">Cursos<i class="material-icons right">arrow_drop_down</i></a></li>
 				    <li><a class="left" href="cursos">Fale com a FIS</a></li>
-				 	<ul class="right"> 
-			    	<li><a id="aumenta_fonte" class="white-text increase-me" href="#" title="Aumentar tamanho da fonte"><i class="fa fa-plus-square-o"></i></a></li>
-					<li><a id="reduz_fonte" class="white-text decrease-me" href="#" title="Reduzir tamanho da fonte"><i class="fa fa-minus-square-o"></i></a></li>
-                    <li><a id="contrast-text" class="white-text change-me" href="#" title="contraste"><i class="material-icons right">invert_colors</i></a></li>
-
-			   </ul>
+					 <li>
+					 <ul class="right"> 
+				    	<li><a id="aumenta_fonte" class="white-text increase-me" href="#" title="Aumentar tamanho da fonte"><i class="fa fa-plus-square-o"></i></a></li>
+						<li><a id="reduz_fonte" class="white-text decrease-me" href="#" title="Reduzir tamanho da fonte"><i class="fa fa-minus-square-o"></i></a></li>
+	                    <li><a id="contrast-text" class="white-text change-me" href="#" title="contraste"><i class="material-icons right">invert_colors</i></a></li>
+				   	</ul>
+				   	</li>
 				    
 			    </ul>
-			
+				<div class="conteiner blue">
 			    <ul class="side-nav" id="mobile-demo">
+			     <a class="brand-logo minimo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+
+                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.png"></a>
 			        <li><a href="sass.html">Sass</a></li>
 			        <li><a href="badges.html">Components</a></li>
 			        <li><a href="collapsible.html">Javascript</a></li>
 			        <li><a href="mobile.html">Mobile</a></li>
 			    </ul>
+			    </div>
 			  
 			  </div>
 			</nav>
