@@ -25,7 +25,7 @@
 
 	</style>
         
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/malterialize.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/materialize.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css" rel="stylesheet" type="text/css" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
@@ -52,9 +52,6 @@
 	<header>
 	
 
-		
-		
-
 		<div class="navbar-fixed">
 			<nav class=" white-text">
 			    <div id="font-setting-buttons" class="nav-wrapper z-depth-0 white-text  blue darken-1">
@@ -70,7 +67,7 @@
 
 				<!-- Dropdown Structure -->
 				<ul id="Cursos" class="font-1 dropdown-content">
-				  <li><a href="graduacao" class="flow-text small">Graduação</a></li>
+				  <li><a href="graduacao" class="flow-text small">Bacharelado</a></li>
 				  <li><a href="#!" class="flow-text small">Tecnológico</a></li>
 				  <li class="divider"></li>
 				  <li><a href="#!" class="flow-text small">Pós/MBA</a></li>

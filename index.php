@@ -122,7 +122,7 @@ figure {
        <li class="effect-honey"><a href="<?php echo get_permalink($recent->ID); ?>"> 
          <?php the_post_thumbnail('recent-posts',array('class'=>'img-responsive')); ?></a>
         <div class="caption center-align">
-          <h3><strong><?php the_title(); ?></strong></h3>
+          <h4><strong><?php the_title(); ?></strong></h4>
           
         </div>
       </li>
@@ -162,7 +162,7 @@ figure {
 </div><!-- row -->
 <div class="row"><!-- Inicio linha2 -->
 
-<div class="col s12 m6 l7"><!-- Bloco de 3 Materias Principais - Primeira coluna -->
+<div class="col s12 m6 l6"><!-- Bloco de 3 Materias Principais - Primeira coluna -->
   <div class="card">
         <div class="card-content  blue darken-1">
           <span class="card-title  text-darken-4">TV FIS<i class="mdi-navigation-more-vert right"></i></span>
@@ -172,16 +172,32 @@ figure {
 </div><!-- FIM :: Bloco de 3 Materias Principais - Primeira coluna -->
 
 
-<div class="col s12 m6 l5"><!-- Cards Coluna Principal -->
-   <div class="card">
-        <div class="card-content  blue darken-1 ">
-          <span class="card-title ">Calendário<i class="mdi-navigation-more-vert right"></i></span>
-        </div>
-      <?php if ( dynamic_sidebar('calendario_fis') ) : else : endif; ?>
+<div class="col s12 m6 l6">
+
+<div class="card">
+        <div class="card-content blue darken-1">
+          <span class="card-title white-text text-darken-4">Últimas Notícias<i class="mdi-navigation-more-vert right"></i></span>
+        </div>  
+
+      <?php 
+        $recent = new WP_Query("category_name=Noticias&showposts=6"); 
+        while($recent->have_posts()) : $recent->the_post();
+      ?> 
+               
+                  
+
       
-      
+      <div class="collection">
+      <a class="collection-item" href="<?php echo get_permalink($recent->ID); ?>"><?php the_title(); ?></a>
       </div>
-</div><!-- Cards Coluna Principal -->
+            
+   
+      <?php endwhile; // Fim :: loop da categoria FIS ?>  
+
+
+      </div>
+
+</div>
 </div><!-- row -->
 
 </div><!-- FIM Conteudo Principal :: Acaba antes do parallax com os icones dos cursos -->
@@ -236,12 +252,12 @@ figure {
 
 <div class="col s12 m6 l12"><!-- Cards Coluna Principal -->
   <div class="departamentos card blue darken-1">
-          <div class="card-content-fis card-content blue darken-1">
+          <div class="card-content blue darken-1">
 
           <span class="card-title">Departamentos<i class="mdi-navigation-more-vert right"></i></span>
         </div>
         
-        <div class="collection blue darken-1">
+        <div class="collection white">
         <a href="biblioteca" class="opaco collection-item">Biblioteca</a>
         <a href="nupex" class="opaco collection-item">NUPEX</a>
         <a href="escola-fisio" class="opaco collection-item">Escola Fisio</a>
@@ -251,12 +267,12 @@ figure {
   </div>
 
    <div class="revistas card blue darken-1">
-          <div class="card-content-fis card-content">
+          <div class="card-content blue darken-1">
 
           <span class="card-title menor">Revistas e Periódicos<i class="mdi-navigation-more-vert right"></i></span>
         </div>
         
-        <div class="collection blue darken-1">
+        <div class="collection white">
         <a href="http://fis.edu.br/resac/" TARGET="_blank" class="opaco collection-item">Sociedade, Administração e Contemporaneidade</a>
         <a href="http://www.fis.edu.br/revistadireito3/" TARGET="_blank" class="opaco collection-item">Construindo Direito</a>
         <a href="http://www.fis.edu.br/revistaenfermagem/" TARGET="_blank" class="opaco collection-item">Saúde Coletiva em Debate</a>
@@ -379,17 +395,15 @@ figure {
 
 </div>
 
-
-<div class="col s12 m6 l4">
-
-<div class="card">
-        <div class="card-content">
-          <span class="card-title grey-text text-darken-4">Facebook #FISEMAIS<i class="mdi-navigation-more-vert right"></i></span>
-        </div>  
-        <div class="fb-like">sssssssssss</div>
+<div class="col s12 m6 l4"><!-- Cards Coluna Principal -->
+   <div class="card">
+        <div class="card-content  blue darken-1 ">
+          <span class="card-title ">Calendário Acadêmico<i class="mdi-navigation-more-vert right"></i></span>
+        </div>
+      <?php if ( dynamic_sidebar('calendario_fis') ) : else : endif; ?>
       </div>
+</div><!-- Cards Coluna Principal -->
 
-</div>
 
 
 <div class="col s12 m6 l4">
